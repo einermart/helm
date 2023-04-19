@@ -9,5 +9,6 @@
       debug:
         msg: "'{{ lookup('ansible.builtin.env', 'KEYCLOAK_CLIENT_KEY') }}' is the client key"
     - name: Quering variable
-       debug:
-         var: key
+      debug:
+        var: key
+        verbosity: 2
