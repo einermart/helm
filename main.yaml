@@ -7,4 +7,4 @@
   tasks:
     - name: Testing ENV
       debug:
-        msg: "'{{ lookup('ansible.builtin.env', 'KEYCLOAK_CLIENT_KEY:') }}' is the client key"
+        msg: "'{{ lookup('ansible.builtin.env', 'KEYCLOAK_CLIENT_KEY') }}' is the client key"
