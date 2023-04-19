@@ -5,6 +5,9 @@
   vars:
     test: ${}
   tasks:
-    - name: Testing ENV
+    - name: Keycloak Client Key
       debug:
         msg: "'{{ lookup('ansible.builtin.env', 'KEYCLOAK_CLIENT_KEY') }}' is the client key"
+    - name: Keycloak Secret Key
+      debug: 
+        msg: "'{{ lookup('ansible.builtin.env', 'KEYCLOAK_CLIENT_SECRET') }}' is the secret key"
