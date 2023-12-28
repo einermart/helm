@@ -1,0 +1,6 @@
+awx-operator:
+  platform:
+    deploy: true
+postgresql:
+  platform:
+    deploy: true
