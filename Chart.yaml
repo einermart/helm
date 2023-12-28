@@ -1,12 +1,12 @@
 ---
 apiVersion: v2
 name: awx-operator
-version: 2.8.0
+version: 2.7.2
 description: awx-operator helm chart
 type: application
 dependencies:
   - name: awx-operator
-    version: 2.8.0
+    version: 2.7.2
     condition: awx-operator.platform.deploy
     repository: "https://ansible.github.io/awx-operator/"
   - name: postgresql
